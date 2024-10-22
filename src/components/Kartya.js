@@ -1,9 +1,10 @@
 import React from 'react';
 
-export default function Kartya({kep}){
+export default function Kartya(props){
+
     return(
         <div className="card">
-            <img src={`/kepek/${kep}`} alt="kep"/>
+            <img src={props.obj.src} alt="kep"/>
         </div>
     )
 }

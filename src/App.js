@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Kartyak from './components/Kartyak';
+import { kepekLista } from './kepek';
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       </header>
       <main>
         <article>
-          <Kartyak/>
+          <Kartyak lista={kepekLista}/>
         </article>
         <footer><p>Horváth Nauzika</p></footer>
       </main>
