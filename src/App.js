@@ -1,21 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
-import Kartyak from './components/Kartyak';
 import { kepekLista } from './kepek';
+import Jatekter from './components/Jatekter';
+import Nagykartya from './components/Nagykartya';
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Képgaléria</h1>
-      </header>
-      <main>
-        <article>
-          <Kartyak lista={kepekLista}/>
-        </article>
-        <footer><p>Horváth Nauzika</p></footer>
-      </main>
+      <body>
+        <main className='container'>
+          <header className="App-header">
+            <h1>Képgaléria</h1>
+          </header>
+          <article className='row'>
+            <Nagykartya obj={kepekLista[0]}/>
+          </article>
+          <article>
+            <Jatekter lista={kepekLista}/>
+          </article>
+          <footer>
+            <p>Horváth Nauzika</p>
+          </footer>
+        </main>
+      </body>
+
     </div>
   );
 }

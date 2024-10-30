@@ -1,11 +1,10 @@
 import React from 'react';
-import "../css/Kartya.css";
 import Kartya from "./Kartya";
 
 
-export default function Kartyak(props){
+export default function Jatekter(props){
     return(
-        <div className="kartyak">
+        <div className="jatekter row">
             {props.lista.map((elem, index) => (
                 <Kartya obj={elem} key={index} />
             ))}

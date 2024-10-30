@@ -23,10 +23,9 @@
   color: black;
 }
 
-.kartyak{
+.jatekter{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 20px;
 } 
 
 img{
@@ -36,7 +35,6 @@ img{
 .App-link {
   color: #61dafb;
 }
-
 
 @keyframes App-logo-spin {
   from {
