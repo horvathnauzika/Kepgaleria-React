@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { KepContext } from '../context/Context';
-import { kepekLista } from '../kepek'; // Importáld a kepekListát
+import { kepekLista } from '../kepek';
 
 export default function Nagykartya(){
     
