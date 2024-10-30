@@ -1,34 +1,9 @@
 import './App.css';
-import { kepekLista } from './kepek';
 import Jatekter from './components/Jatekter';
 import Nagykartya from './components/Nagykartya';
-import { useState } from 'react';
-
+import { kepekLista } from './kepek'; 
 
 function App() {
-
-  const [kivalasztott, setkivalasztott]=useState(0);
-
-  const kovetkezoKep = () => {
-    setkivalasztott((elozoKep) => {
-        if (elozoKep + 1 < kepekLista.length) {
-            return elozoKep + 1;
-        } else {
-            return 0; // végén visszaáll az első képre
-        }
-    });
-};
-
-  const elozoKep = () => {
-    setkivalasztott((elozoKep) => {
-        if (elozoKep === 0) {
-            return kepekLista.length - 1;
-        } else {
-            return elozoKep - 1;
-        }
-    });
-};
-
 
   return (
     <div className="App">
@@ -38,7 +13,7 @@ function App() {
             <h1>Képgaléria</h1>
           </header>
           <article className='row'>
-            <Nagykartya obj={kepekLista[kivalasztott]} kovetkezo={kovetkezoKep} elozo={elozoKep}/>
+            <Nagykartya/>
           </article>
           <article>
             <Jatekter lista={kepekLista}/>
